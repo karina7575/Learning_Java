@@ -1,5 +1,7 @@
 import javax.swing.*;
-public class Main {
+
+public class Window
+{
     public static void main(String[] args)
     {
         JFrame frame = new JFrame("Hello,Java!");
