@@ -2,10 +2,14 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args)
     {
-        JFrame frame = new JFrame("Hello,Java!");
-        JLabel label = new JLabel ("Hello,Java!", JLabel.CENTER );
-        frame. add ( label );
-        frame.setSize(300, 300);
-        frame.setVisible(true);
+        int a = 1234;
+        int b = 99;
+        int p = a*b;
+        int q = a/b;
+        int r = a%b;
+        System.out.println(a + "*" + b + "=" + p);
+        System.out.println(a + "/" + b + "=" + q);
+        System.out.println(a + "%" + b + "=" + r);
+        System.out.println(a + "=" + q + "*" + b + "+" + r);
     }
 }
