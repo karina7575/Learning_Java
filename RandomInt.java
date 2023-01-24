@@ -2,10 +2,10 @@ public class RandomInt
 {
     public static void main (String[] args)
     {
-        double f = -87;
-        double sinus = Math.sin (f);
-        double cosinus = Math.cos (f);
+        int n = 109;
+        double r = Math.random();
+        int value = (int)(r*n);
 
-        System.out.println(sinus * sinus + cosinus * cosinus);
+        System.out.println(value);
     }
 }
