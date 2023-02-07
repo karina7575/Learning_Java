@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class ExcercisesThird
 {
     public static void main(String[] args)
@@ -88,14 +89,80 @@ public class ExcercisesThird
         }
 
         //1.3.10
-        System.out.println("1.3.10");
+        System.out.println("\n1.3.10");
         int ch = 23, mi = 1;
-        double ni;
+        double ni, mid = 0.0;
         while(mi < ch)
         {
             ni = Math.random();
             mi++;
+            mid += ni;
+            System.out.println(ni + ", ");
         }
+        mid = mid/(double)ch;
+        System.out.print("Среднее значение = " + mid);
+
+        //1.3.12
+        System.out.println("\n1.3.12");
+        double nr = 2.0;
+        String str;
+        while (nr <=2048.0)
+        {
+            str = String.format("%.2f", Math.log(nr));
+            System.out.print(str);
+            str = String.format("%.2f ", nr);
+            System.out.print("\t\t" + str);
+            str = String.format("%.2f", (nr*(Math.log(nr))));
+            System.out.print("\t\t" + str);
+            str = String.format("%.2f", (Math.pow(nr, 2.0)));
+            System.out.print("\t\t" + str);
+            str = String.format("%.2f", (Math.pow(nr, 3.0)));
+            System.out.print("\t\t" + str);
+            str = String.format("%.2f", (Math.pow(2.0, nr)));
+            System.out.print("\t\t" + str);
+            nr *= 2;
+            System.out.println();
+        }
+
+        //1.3.13
+        System.out.println("\n1.3.13");
+        int ng = 123456789, mg = 0;
+        while (ng != 0)
+        {
+            mg = (10*mg) + (ng%10);
+            ng = ng / 10;
+            System.out.println (ng + " " + mg);
+        }
+        //1.3.14 Числа Фибоначчи
+        System.out.println("1.3.14");
+        int f = 0, g = 1;
+        for (int i = 0; i <= 15; i++)
+        {
+            System.out.println (f);
+            f = f + g;
+            g = f - g;
+        }
+
+        //1.3.16
+        System.out.println("1.3.16");
+        int bt = 2;
+        Scanner in = new Scanner(System.in);
+        int nt = in.nextInt();
+        in.close();
+        while (bt<=nt)
+        {
+            System.out.println(bt);
+            bt *= 2;
+        }
+
+        //1.3.17
+        System.out.println("1.3.17");
+        int years = 4, dollars = 435000;
+        double procent = 8.7;
+        int sum = (int) (dollars * (Math.exp(years*procent)));
+        System.out.println(sum);
+        
+
 
 
     }
