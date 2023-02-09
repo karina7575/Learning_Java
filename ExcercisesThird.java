@@ -157,13 +157,34 @@ public class ExcercisesThird
 
         //1.3.17
         System.out.println("1.3.17");
-        int years = 4, dollars = 435000;
+        int years = 4, months;
+        double dollars = 435.0;
         double procent = 8.7;
-        int sum = (int) (dollars * (Math.exp(years*procent)));
-        System.out.println(sum);
-        
+        //int sum = (int) (dollars * (Math.exp(years*procent)));
+        //System.out.println(sum);
+        months = years * 12;
+        for(int i = 1; i <= months; i++){
+            int sum = (int) (dollars + (dollars*procent*0.01));
+            dollars = sum;
+            System.out.println(sum);
+        }
 
-
+        //1.3.21
+        System.out.println("1.3.21");
+        int power = 1, n = 19;
+        while (power <=n/2) power = 2 * power;
+        //теперь power содержит наибольшую степень 2<=n
+        while (power > 0)
+        {
+            if (n < power) {System.out.print(0);}
+            else {System.out.print(1); n-=power;}
+            power /=2;
+        }
+        System.out.println();
+        while(n % 16 > 0)
+        {
+            if ()
+        }
 
     }
 }
