@@ -170,21 +170,25 @@ public class ExcercisesThird
         }
 
         //1.3.21
-        System.out.println("1.3.21");
-        int power = 1, n = 19;
-        while (power <=n/2) power = 2 * power;
+        //System.out.println("1.3.21");
+        //int power = 1, n = 19;
+        //while (power <=n/2) power = 2 * power;
         //теперь power содержит наибольшую степень 2<=n
-        while (power > 0)
-        {
-            if (n < power) {System.out.print(0);}
-            else {System.out.print(1); n-=power;}
-            power /=2;
-        }
-        System.out.println();
-        while(n % 16 > 0)
-        {
-            if ()
-        }
+        //while (power > 0)
+        //{
+        //    if (n < power) {System.out.print(0);}
+        //    else {System.out.print(1); n-=power;}
+        //    power /=2;
+        //}
+        //System.out.println();
+        //while(n % 16 > 0)
+        //{
+        //    if ()
+        //}
+
+        //1.3.23
+        System.out.println("1.3.23");
+        
 
     }
 }
